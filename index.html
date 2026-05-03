@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <title>How to CSS</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            strong{
+    font-family:'Courier New', Courier, monospace;
+}
+
+p, ol{color:black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 16px;
+}
+       
+        </style>
         
     </head>
     <body>
@@ -13,47 +24,50 @@
     target="_blank" rel="noreffer">here</a> for the odin notes.</p>
         
         <h2>Selector Types</h2>
-        <p><strong>Universal Selectors</strong>: This selector
+        <p class="info"><strong>Universal Selectors</strong>: This selector
         will select everything. The universal selector is 
         represented by "*"</p>
-        <p><strong>Type selectors</strong>: This selector will 
+        <p class="info"><strong>Type selectors</strong>: This selector will 
         select all elements of this type. It is represented by the 
         name of the element. For example, if I wanted to select 
         all things in paragraph, I would represent it with "p".</p>
-        <p><strong>Class Selectors</strong>: From what I understand, 
+        <p class="info"><strong>Class Selectors</strong>: From what I understand, 
         a class is an attribute that I can make up for organization. 
         Class selectors let you select everything in that class. 
         It is represented by: .classname. This does not work if 
         the class starts with a number. You add multiple classes
         to an element by separating with spaces.</p>
-        <p><strong>ID Selectors</strong>: This is like a class
+        <p class="info"><strong>ID Selectors</strong>: This is like a class
         selector but you each element can only have one id 
         selector and it can only appear once per page. Use sparringly
         if at all. These cannot start with a number. It is represented by
         #idname</p>
-        <p><strong>The Grouping Selector</strong>: This selector 
+        <p class="info"><strong>The Grouping Selector</strong>: This selector 
             is used to reduce repition. Say I have two elements
             and I wanted to have somethings about them the same
             while I wanted other things to be different. I use the
             grouping selector to acheive this. The selector is .firstclass, 
         .secondclass. </p>
-        <p><strong>Chaining Selectors</strong>: This is a way to 
+        <p class="info"> <strong>Chaining Selectors</strong>: This is a way to 
         be specific. You can select elements if they have all of the classes. 
     These are represented by .class1.class2. This will select everything 
     that has class 1 and 2. You can also use .class1#class2. 
     to chain a class selector to an id selector. You cannot chain
     more than one type of type selectors.</p>
-    <p><strong>Descendant Combinator</strong>:Allows me to 
+    <p><strong>Descendant Combinator</strong>: This allows me to 
         select an element if it also has the anscestor I am asking 
-        for. They are represented by .ancestor .child. Note the space. 
+        for. Say I only wanted to call the li that were in ol, then
+        I could use this selector. 
+         They are represented by .ancestor .child. Note the space between
+         the two selectors. This is what makes it a descendant. 
     combine </p>
     <h2>Properties</h2>
-    <p><strong>Color and Background Color</strong>: The property
-    <em>color</em>sets the color of an element, the property
+    <p class="info"><strong>Color and Background Color</strong>: The property
+    <em>color</em> sets the color of an element, the property
     <em>background-color</em> sets background color. For hexcodes 
     use the "#" for rgb use "rgb". You can make something transparant
     by adding two zeros between the ff and the 0's</p>
-    <p><strong>Typography basics and text-align</strong>
+    <p class="info"><strong>Typography basics and text-align</strong>
     <ol>
         <li><em>font-family</em> property can be used to get the
         font family. All fonts are either part of a font family
@@ -68,12 +82,12 @@
         bold or it can be a number between 0-1000. Typically the numbers
         increase by values of 100. 700 = bold.</li>
    </ol></p>
-    <p><strong>Image height and width</strong> You can change the
+    <p class="info"><strong>Image height and width</strong> You can change the
     size of an images height or width and keep things proportional
     by setting one to auto and the other to a number. So height: auto;
     width: 200px.</p>
     <h2>Adding CSS to HTML</h2>
-    <p><strong>External CSS</strong> This method creates
-    another css file and links to it in the head. Check out the code</p>
+    <p class="info"><strong>External CSS</strong> This method creates
+    another css file and links to it in the head. Check out the code.</p>
     </body>
 </html>
