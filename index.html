@@ -9,7 +9,7 @@
         <h1>How to Use CSS</h1>
         <p>This week I am learning CSS, here are all my notes. Click <a 
         href="https://www.theodinproject.com/lessons/foundations-intro-to-css"
-    target="_blank" >here</a>for the odin notes.</p>
+    target="_blank" rel="noreffer">here</a> for the odin notes.</p>
         
         <h2>Selector Types</h2>
         <p><strong>Universal Selectors</strong>: This selector
@@ -24,7 +24,7 @@
         Class selectors let you select everything in that class. 
         It is represented by: .classname. This does not work if 
         the class starts with a number. You add multiple classes
-        to an element by separating with spaces. 
+        to an element by separating with spaces.</p>
         <p><strong>ID Selectors</strong>: This is like a class
         selector but you each element can only have one id 
         selector and it can only appear once per page. Use sparringly
@@ -46,6 +46,35 @@
         select an element if it also has the anscestor I am asking 
         for. They are represented by .ancestor .child. Note the space. 
     combine </p>
+    <h2>Properties</h2>
+    <p><strong>Color and Background Color</strong>: The property
+    <em>color</em>sets the color of an element, the property
+    <em>background-color</em> sets background color. For hexcodes 
+    use the "#" for rgb use "rgb". You can make something transparant
+    by adding two zeros between the ff and the 0's</p>
+    <p><strong>Typography basics and text-align</strong>
+    <ol>
+        <li><em>font-family</em> property can be used to get the
+        font family. All fonts are either part of a font family
+        like "Times New Roman" (quotation marks because of the spaces)
+         or part of a generic family like serif (generic families don
+         't use quotes). Start with the font you want then use a 
+        generic family as a fallback by sepatrting with a comman and 
+        ending with a semicolon.</li>
+         <li><em>font-size</em></li> It does as suggests. EX: font-size:
+         22px. Notice there are no spaces in the property value.
+         <li><em>font-weight</em> The value here can be a word like 
+        bold or it can be a number between 0-1000. Typically the numbers
+        increase by values of 100. 700 = bold.</li>
+   </ol></p>
+    <p><strong>Image height and width</strong> You can change the
+    size of an images height or width and keep things proportional
+    by setting one to auto and the other to a number. So height: auto;
+    width: 200px.</p>
+    <h2>Adding CSS to HTML</h2>
+
+
+
 
     </body>
 </html>
